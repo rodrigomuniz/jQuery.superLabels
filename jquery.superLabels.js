@@ -184,6 +184,7 @@
 				left:_noVal(_field) ? _defaults.labelLeft : $(_field).width()-_label.width(),
 				opacity:_opacity,
 				position:'absolute',
+				cursor:'text',
 				top:_defaults.labelTop,
 				zIndex:_defaults.baseZindex+2
 			}).addClass('sl_label');
@@ -209,7 +210,7 @@
 				_to.left = $(this).width()-_label.width();
 				_to.opacity = _defaults.opacity;
 			} else {
-				_duration = _defaults.fadeDuration;
+				_to.opacity = _defaults.opacity;
 			}
 
 			_label.stop(true,false).animate(_to, _duration, _defaults.easingOut);

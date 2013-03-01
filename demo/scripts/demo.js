@@ -11,7 +11,8 @@ jQuery(function($) {
 
 	$('.basic form, .placeholder form').superLabels({
 		labelLeft:5,
-		labelTop:5
+		labelTop:5,
+		slide: false
 	});
 
 	$('.tweakable form').superLabels(tweakableConf);
